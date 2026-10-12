@@ -78,6 +78,7 @@ dependencies = [
     "PyYAML", # gradio config.yaml
     "gradio>=5.49.1", # web UI (vieneu-web)
     "librosa>=0.11.0",
+    "moviepy>=2.0.0",
     # NOTE: audio watermarking is opt-in via `pip install vieneu[watermark]` (resemble-perth,
     # needs torch/torchaudio). The PyPI package literally named `perth` is an unrelated
     # threading helper and must NOT be listed here (issue #191).
@@ -141,6 +142,7 @@ dev = [
     # install — `pip install vieneu` stays minimal/torch-free). CI installs the dev
     # group, so these tests can import librosa/transformers/neucodec-based engines.
     "librosa>=0.11.0",
+    "moviepy>=2.0.0",
     "transformers",
     "neucodec>=0.0.4",
 ]
